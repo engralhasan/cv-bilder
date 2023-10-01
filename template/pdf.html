@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Material Resume</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  </noscript>
+  <!-- <link href="{% static 'css/font-awesome/css/all.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/aos.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" /> -->
+
+</head>
+
+<body class="bg-light" id="top">
+  <header class="d-print-none">
+    <div class="container text-center text-lg-left">
+      <div class="pt-4 clearfix">
+        <h1 class="site-title mb-0">{{prof.name}}</h1>
+
+      </div>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="container">
+      <div class="resume-container">
+        <div class="shadow-1-strong bg-white my-5" id="intro">
+          <div class="bg-info text-white">
+            <div class="cover bg-image">
+              <div class="mask">
+                <div class="text-center p-5">
+                  <div class="avatar p-1">
+                    <img class="img-thumbnail shadow-2-strong" src="{{prof.image.path }}" width="160"
+                      height="160" />
+                  </div>
+                  <div class="header-bio mt-3">
+                    <div data-aos="zoom-in">
+                      <h2 class="h1">{{prof.name}}</h2>
+                      <p>{{prof.blood_group}}</p>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+          <div class="about-section">
+            <div class="row">
+              <div class="row mt-2">
+                <h2 class="h2 fw-light mb-4">About Me</h2>
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="far fa-calendar-alt pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Name : {{prof.name}}
+                  </div>
+                </div>
+
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="far fa-school pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Qualification: {{prof.qualification}}
+                  </div>
+                </div>
+
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="far fa-envelope pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Father Name: {{prof.father_name}}
+                  </div>
+                </div>
+
+
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="fas fa-phone pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Mother Name : {{prof.mother_name}}
+                  </div>
+                </div>
+
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="fas fa-mosque pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Relegion: {{prof.relegion}}
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="fas fa-map-marker-alt pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Zip Cord: {{prof.zipd}}
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <div class="pb-2 fw-bolder">
+                    <i class="fas fa-globet pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    Nationality: {{prof.nationality}}
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-5 offset-lg-1">
+                <div class="row mt-2">
+                  <h2 class="h2 fw-light mb-4">Bio</h2>
+                  <div class="col-sm-5">
+                    <div class="pb-2 fw-bolder">
+                      <i class="far fa-calendar-alt pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                      Age : {{prof.age}}
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <div class="pb-2 fw-bolder">
+                      <i class="far fa-envelope pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                      Email: {{prof.email}}
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-5">
+                    <div class="pb-2 fw-bolder">
+                      <i class="fas fa-phone pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                      Phone : {{prof.number}}
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5">
+                    <div class="pb-2 fw-bolder">
+                      <i class="fas fa-map-marker-alt pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                      Address: {{prof.address}}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
+          <div class="skills-section">
+            <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+            <div class="row">
+               
+                <div class="mb-3">
+                  <span class="fw-bolder">{{prof.skills1}} : {{prof.skills2}}%</span>
+                </div><br>
+
+              <div class="mb-3">
+                <span class="fw-bolder">{{prof.skills3}} :{{prof.skills4}}%</span>
+              </div><br>
+              <div class="mb-3">
+                <span class="fw-bolder">{{prof.skills5}} : {{prof.skills6}}%</span>
+
+              </div><br>
+              <div class="mb-3">
+                <span class="fw-bolder">{{prof.skills7}} : {{prof.skills8}}%</span>
+
+              </div><br>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <span class="fw-bolder">{{prof.skills9}} : {{prof.skills10}}%</span>
+
+                </div><br>
+                <div class="mb-3">
+                  <span class="fw-bolder">{{prof.skills11}} : {{prof.skills12}}%</span>
+                </div><br>
+                <div class="mb-3">
+                  <span class="fw-bolder">{{prof.skills13}} : {{prof.skills14}}%</span>
+                </div><br>
+
+                <div class="mb-3">
+                  <span class="fw-bolder">{{prof.skills15}} : {{prof.skills16}}%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+          <div class="work-experience-section">
+            <h2 class="h2 fw-light mb-4">Work Experience</h2>
+            <div class="timeline">
+              <div class="timeline-card timeline-card-info">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">
+                    <h3>{{prof.job1}} <span class="text-muted h6">at {{prof.job2}}</span></h3>
+                  </div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">
+                    <h5>{{prof.job3}} - {{prof.job4}}</h5>
+                  </div>
+                  <div>
+                    <p>{{prof.job5}}.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-card timeline-card-info">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">
+                    <h3>{{prof.job6}} <span class="text-muted h6">at {{prof.job7}}</span></h3>
+                  </div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">
+                    <h5>{{prof.job8}} - {{prof.job3}}</h5>
+                  </div>
+                  <div>
+                    <p>{{prof.job10}}.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+          <div class="education-section">
+            <h2 class="h2 fw-light mb-4">Education</h2>
+            <div class="timeline">
+              <div class="timeline-card timeline-card-success">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">
+                    <h3> {{prof.educ1}} <span class="text-muted h6">from {{prof.educ2}}</span></h3>
+                  </div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">
+                    <h5>{{prof.educ3}} - {{prof.educ4}}</h5>
+                  </div>
+                  <div>
+                    <p>{{prof.educ5}}.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-card timeline-card-success">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">
+                    <h3> {{prof.educ6}} <span class="text-muted h6">from {{prof.educ7}}</span></h3>
+                  </div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">
+                    <h5>{{prof.educ8}} - {{prof.educ9}}</h5>
+                  </div>
+                  <div>
+                    <p>{{prof.educ10}}.</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
+          <div class="portfolio-section">
+            <h2 class="h2 fw-light mb-4">Portfolio</h2>
+
+            <div class="row g-0 portfolio-reverse">
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="m-4 mt-md-2 text-end">
+                  <h3>{{prof.por1}}</h3>
+                  <p class="text-muted">
+                    {{prof.por2}}.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <a href="#"><img class="img-fluid" src="{{prof.image1.path }}" width="160" height="160" /></a>
+              </div>
+            </div>
+            <div class="row g-0 portfolio-reverse">
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="m-4 mt-md-2 text-end">
+                  <h3>{{prof.por3}}</h3>
+                  <p class="text-muted">
+                    {{prof.por4}}.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <a href="#"><img class="img-fluid" src="{{prof.image2.path }}" width="160" height="160" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="references">
+          <div class="reference-section">
+            <h2 class="h2 fw-light mb-4">References</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="d-flex mb-2">
+                  <div class="avatar">
+                    <img src="{{prof.image3.path }}" width="60" height="60" />
+                  </div>
+                  <div class="header-bio m-3 mb-0">
+                    <h3 class="h6 mb-1">{{prof.ref1}}</h3>
+                    <h5>{{prof.ref2}} / {{prof.ref3}}</h5>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="text-secondary fas fa-quote-left"></i>
+                  <p class="lead mx-2">
+                    {{prof.ref4}}.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex mb-2">
+                  <div class="avatar">
+                    <img src="{{prof.image4.path }}" width="60" height="60" />
+                  </div>
+                  <div class="header-bio m-3 mb-0">
+                    <h3 class="h6 mb-1">{{prof.ref5}}</h3>
+                    <h5>{{prof.ref6}} / {{prof.ref7}}</h5>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="text-secondary fas fa-quote-left"></i>
+                  <p class="lead mx-2">
+                    {{prof.ref8}}.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+          <div class="contant-section">
+            <h2 class="h2 fw-light text mb-4">Contact</h2>
+            <div class="row mb-4">
+              <div class="col-md-5">
+                <div class="mt-1">
+                  <div class="h6">
+                    <i class="fas fa-phone pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    +0718-111-0011
+                  </div>
+                  <div class="h6">
+                    <i class="far fa-envelope pe-2 text-muted" style="width: 24px; opacity: 0.85"></i>
+                    walter@company.com
+                  </div>
+                </div><br><br><br>
+                <div class="mt-5 d-print-none">
+                  <form method="POST">
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="name">Name</label>
+                      <input type="text" required />
+
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="email">Email address</label>
+                      <input type="email" required />
+
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea rows="2" required></textarea>
+
+                    </div>
+                    <button type="submit">Send</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-7 d-print-none">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.9774799129763!2d-73.98032087190995!3d40.765927126473905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sin!4v1614183731149!5m2!1sen!2sin"
+                  width="200" height="200" style="border: 0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+{% extends "base.html" %}
+{% block title %}home{% endblock %}
+{% block body%}
+
+<div class="wrapper">
+  <section class="form signup">
+    <header> Register</header>
+    <form action="#" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="field input">
+        <label>Enter your name</label>
+        <input type="text" name="lname" placeholder="Enter your name" required>
+      </div>
+
+      <div class="field input">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+      </div>
+
+      <div class="field input">
+        <label>Age</label>
+        <input type="text" name="age" placeholder="Enter Your age" required>
+      </div>
+
+
+      <div class="field input">
+        <label>Number</label>
+        <input type="text" name="number" placeholder="Enter Your number" required>
+      </div>
+
+      <div class="field input">
+        <label>Adress</label>
+        <input type="text" name="address" placeholder="Enter Your address" required>
+      </div>
+
+      <div class="field image">
+        <label>Select Imag</label>
+        <input type="file" name="image">
+      </div>
+
+      <div class="field input">
+        <label> Enter Your Short Skills</label>
+        <input type="text" name="blood" placeholder="Enter Your short skills" required>
+      </div>
+
+      <div class="field input">
+        <label>Nationality</label>
+        <input type="text" name="nationality" placeholder="Enter Your nationality" required>
+      </div>
+
+      <div class="field input">
+        <label> Enter Your Long Skills</label>
+        <input type="text" name="gender" placeholder="Enter Your Long Skills" required>
+      </div>
+
+      <div class="field input">
+        <label>Relegion</label>
+        <select name="relegion">
+          <option value="">Enter Your Relegion</option>
+          <option value="Islam">Islam</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddhism">Buddhism</option>
+          <option value="Judaism">Judaism</option>
+          <option value="Catholicism">Catholicism</option>
+          <option value="Christianity">Christianity</option>
+        </select>
+      </div>
+
+      <div class="field input">
+        <label>Qualification</label>
+        <input type="text" name="qualification" placeholder="Enter Your qualification" required>
+      </div>
+      <div class="field input">
+        <label>Father Name</label>
+        <input type="text" name="father_name" placeholder="Enter Your Father Name" required>
+      </div>
+      <div class="field input">
+        <label>Mother Name</label>
+        <input type="text" name="mother_name" placeholder="Enter Your Mother Name" required>
+      </div>
+      <div class="field input">
+        <label>Zip Cord</label>
+        <input type="text" name="zip_cord" placeholder="Enter Your Zip Cord" required>
+      </div>
+
+      <div class="field input">
+        <label>Date Of Birth</label>
+        <input type="text" name="date" placeholder="Enter Your date_of_birth" required>
+      </div><br>
+
+
+      <div class="field input">
+
+        <label>Work Experience </label>
+      </div><br>
+      <div class="field input">
+
+        <label>Work Experience One </label>
+      </div>
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Job Name</label>
+          <input type="text" name="job1" placeholder="Enter Your Job Name" required>
+        </div>
+        <div class="field input">
+          <label>Enter Compani name</label>
+          <input type="text" name="job2" placeholder="Enter Your Compani name" required>
+        </div>
+      </div>
+
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your jab Start</label>
+          <input type="text" name="job3" placeholder="Enter Your jab Start" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your jab End</label>
+          <input type="text" name="job4" placeholder="Enter Your jab End" required>
+        </div>
+      </div>
+
+      <div class="field input">
+        <label>Enter Your jab Ditels</label>
+        <input type="text" name="job5" placeholder="Enter Your jab Ditels" required>
+      </div>
+
+      <br>
+
+      <div class="field input">
+
+        <label>Work Experience Tow </label>
+      </div><br>
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Job Name</label>
+          <input type="text" name="job6" placeholder="Enter Your Job Name" required>
+        </div>
+        <div class="field input">
+          <label>Enter Compani name</label>
+          <input type="text" name="job7" placeholder="Enter Your Compani name" required>
+        </div>
+      </div>
+
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your jab Start</label>
+          <input type="text" name="job8" placeholder="Enter Your jab Start" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your jab End</label>
+          <input type="text" name="job9" placeholder="Enter Your jab End" required>
+        </div>
+      </div>
+
+      <div class="field input">
+        <label>Enter Your jab Ditels</label>
+        <input type="text" name="job10" placeholder="Enter Your jab Ditels" required>
+      </div>
+
+
+      <br>
+
+      <div class="field input">
+
+        <label>Education Section </label>
+      </div><br>
+
+
+      <div class="field input">
+
+        <label>Education One </label>
+      </div>
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Drg</label>
+          <input type="text" name="educ1" placeholder="Enter Your Drg" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your College name</label>
+          <input type="text" name="educ2" placeholder="Enter Your College name" required>
+        </div>
+      </div>
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Section Start</label>
+          <input type="text" name="educ3" placeholder="Section Start" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your Section End</label>
+          <input type="text" name="educ4" placeholder="Section End" required>
+        </div>
+      </div>
+      <div class="field input">
+        <label>Enter Your Crose ditels</label>
+        <input type="text" name="educ5" placeholder="Crose ditels" required>
+      </div>
+
+      <br>
+
+      <div class="field input">
+
+        <label>Education Tow </label>
+      </div><br>
+
+
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Drg</label>
+          <input type="text" name="educ6" placeholder="Enter Your Drg" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your College name</label>
+          <input type="text" name="educ7" placeholder="Enter Your College name" required>
+        </div>
+      </div>
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Section Start</label>
+          <input type="text" name="educ8" placeholder="Section Start" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your Section End</label>
+          <input type="text" name="educ9" placeholder="Section End" required>
+        </div>
+      </div>
+      <div class="field input">
+        <label>Enter Your Crose ditels</label>
+        <input type="text" name="educ10" placeholder="Crose ditels" required>
+      </div>
+
+
+      <br>
+      <div class="field input">
+        <label>Portfolio one</label>
+      </div><br>
+
+      <div class="field image">
+        <label>Select Portfolio Imag</label>
+        <input type="file" name="image1">
+      </div>
+      <div class="field input">
+        <label>Enter your Portfolio Name</label>
+        <input type="text" name="portfolio_name1" placeholder="Enter your Portfolio Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your Portfolio Details</label>
+        <input type="text" name="portfolio_details1" placeholder="Enter your Portfolio Details" required>
+      </div>
+
+
+
+      <br>
+      <div class="field input">
+        <label>Portfolio Tow</label>
+      </div><br>
+
+      <div class="field image">
+        <label>Select Portfolio Imag</label>
+        <input type="file" name="image2">
+      </div>
+      <div class="field input">
+        <label>Enter your Portfolio Name</label>
+        <input type="text" name="portfolio_name2" placeholder="Enter your Portfolio Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your Portfolio Details</label>
+        <input type="text" name="portfolio_details2" placeholder="Enter your Portfolio Details" required>
+      </div>
+
+
+      <br>
+      <div class="field input">
+        <label>References one</label>
+      </div><br>
+
+      <div class="field image">
+        <label>Select References Imag</label>
+        <input type="file" name="image3">
+      </div>
+      <div class="field input">
+        <label>Enter your References Name</label>
+        <input type="text" name="references_name1" placeholder="Enter your References Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Post</label>
+        <input type="text" name="references_name2" placeholder="Enter your References Post" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Job Name</label>
+        <input type="text" name="references_name3" placeholder="Enter your References Job Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Details</label>
+        <input type="text" name="references_name4" placeholder="Enter your References Details" required>
+      </div>
+
+
+
+      <br>
+      <div class="field input">
+        <label>References Tow</label>
+      </div><br>
+
+      <div class="field image">
+        <label>Select References Imag</label>
+        <input type="file" name="image4">
+      </div>
+      <div class="field input">
+        <label>Enter your References Name</label>
+        <input type="text" name="references_name5" placeholder="Enter your References Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Post</label>
+        <input type="text" name="references_name6" placeholder="Enter your References Post" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Job Name</label>
+        <input type="text" name="references_name7" placeholder="Enter your References Job Name" required>
+      </div>
+      <div class="field input">
+        <label> Enter your References Details</label>
+        <input type="text" name="references_name8" placeholder="Enter your References Details" required>
+      </div>
+
+      <!-- Professional Skills -->
+
+<br>
+      <div class="field input">
+        <label> Professional Skills</label>
+      </div><br>
+<!-- Professional Skills 1 -->
+      <div class="name-details">
+        <div class="field input">
+          <label>Enter Your Skills Name</label>
+          <input type="text" name="skills1" placeholder="Enter Your Skills Name" required>
+        </div>
+        <div class="field input">
+          <label>Enter Your Skills %</label>
+          <input type="text" name="skills2" placeholder="Enter Your Skills % 0" required>
+        </div>
+      </div>
+<!-- Professional Skills 2-->
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills3" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills4" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+       
+<!-- Professional Skills 3-->
+      
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills5" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills6" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+<!-- Professional Skills 4-->
+      
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills7" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills8" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+<!-- Professional Skills 5-->
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills9" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills10" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+<!-- Professional Skills 6-->
+       
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills11" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills12" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+<!-- Professional Skills 7-->
+      
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills13" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills14" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+<!-- Professional Skills 8-->
+       
+<div class="name-details">
+  <div class="field input">
+    <label>Enter Your Skills Name</label>
+    <input type="text" name="skills15" placeholder="Enter Your Skills Name" required>
+  </div>
+  <div class="field input">
+    <label>Enter Your Skills %</label>
+    <input type="text" name="skills16" placeholder="Enter Your Skills % 0" required>
+  </div>
+</div>
+
+
+      <!-- <div class="field input">
+            <label>checkbox </label>
+            <input type="checkbox" >
+          </div> -->
+
+      <div class="field button">
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+
+  </section>
+</div>
+<br><br><br>
+
+
+{% endblock %}
