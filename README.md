@@ -1,6 +1,6 @@
 # cv_bilder
 Installation
-1. Clone the repository
+1. Clone the repository copy this path
 2. https://github.com/engralhasan/cv-bilder.git
 
 3. Install all required packages from requirements.txt
